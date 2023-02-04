@@ -1,0 +1,86 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body{
+    background: linear-gradient(to right,rgb(50, 50, 255) 10%, rgb(60, 89, 219),rgb(50, 50, 255));
+    text-align: center;
+}
+
+button {
+    background-color: pink;
+    border-color: rgb(255, 121, 143);
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+
+input {
+    background-color: rgb(163, 169, 247);
+    border-color: rgb(5, 11, 97);
+    color: rgb(0, 0, 0);
+}
+
+#player-name {
+    display: none;
+    animation: zoom-in 1s normal forwards;
+    font-size: 30px;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+}
+
+#introduction {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-height: 400px) {
+    #introduction{
+        top: 0%;
+    }
+}
+
+#start-adventure-button{
+    display: none;
+    width: 30%;
+    min-width: 200px;
+    margin-top: 50px;
+    animation: zoom-in 1s normal forwards;
+}
+
+#intro-message-block{
+    color: rgb(252, 255, 74);
+    top: 40%;
+    width: 100%;
+}
+
+#intro-message-block span {
+    opacity: 0;
+}
+
+#intro-message-block span.revealed {
+    opacity: 1;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+@keyframes title-text {
+    100% {
+        background-position: 0 0;
+    }
+}

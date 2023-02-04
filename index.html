@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="scripts/constants.js"></script>
+    <script type="text/javascript" src="scripts/digimon.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <title>Digimon Idle Tamer</title>
+</head>
+
+<body>
+    <div id="tamer-info">
+        <h1 id="tamer_name_display"></h1>
+        <!-- <h2>Level 1</h2> -->
+        <!-- <h2 id="tamer-bits">Bits: 1000</h2> -->
+    </div>
+    <div id="starter-selection">
+    </div>
+    <div id="main-info">
+        <!-- TODO: Need to change it so it can be used for any Digimon
+        Basic way is to make a dialogue popup so the buttons can be used for any Digimon, but it would require opening it every time.
+        Best way would be finding a way to hide or disable them without IDs.
+        Actually, the popup might show up regardless, so maybe just having an indicator that it's ready to evolve/rebirth could be enough.
+        The buttons would be next to the name of the Digimon in the same line, it would be a long list with all the Digimon owned. -->
+        <button onclick="EvolveDigimon()" class="btn" id="evolve-button" disabled="true" hidden>Evolve</button>
+        <button onclick="RebirthDigimon()" class="btn" id="rebirth-button" disabled="true" hidden>Rebirth</button>
+    </div>
+    <div id="party">
+
+    </div>
+    <!-- <div id="digi-bank">
+        <ol>
+            <li><button>Digimon 1</button></li>
+        </ol>
+    </div> -->
+    <noscript>This website needs javascript to run</noscript>
+</body>
+
+</html>
